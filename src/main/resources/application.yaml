@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: chatbot-hamburgueria
+  ai:
+    model:
+      chat: google-genai
+    google:
+      genai:
+        api-key: ${GEMINI_API_KEY}
+        chat:
+          model: gemini-3.6-flash
+          temperature: 0.4
+          max-output-tokens: 2100
+          thinking-budget: 100
